@@ -1,0 +1,37 @@
+**/bin/
+**/obj/
+.test_tmp/
+artifacts/
+*.user
+*.suo
+.DS_Store
+*.log
+.vs/
+node_modules/
+*.pfx
+*.p12
+*.pem
+*.key
+.env
+*.env.*
+# Project-specific personal development materials
+AI_MASTER_PROMPT.md
+PROGRESS.md
+
+# Publication / local execution outputs
+.publication-work/
+artifacts/
+.test_tmp/
+_runtime/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.log
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+integration-endpoint-v1.json
+ui-endpoint-v1.txt

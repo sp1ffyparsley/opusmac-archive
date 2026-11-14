@@ -1,0 +1,94 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="OpusMac.App.App">
+  <Application.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Dark">
+          <SolidColorBrush x:Key="OpusSurface">#25272C</SolidColorBrush>
+          <SolidColorBrush x:Key="OpusInset">#1E2024</SolidColorBrush>
+          <SolidColorBrush x:Key="OpusLine">#44474E</SolidColorBrush>
+          <SolidColorBrush x:Key="OpusMuted">#B5BAC4</SolidColorBrush>
+          <SolidColorBrush x:Key="OpusInactive">#373A41</SolidColorBrush>
+          <SolidColorBrush x:Key="OpusFileRow">#181818</SolidColorBrush>
+          <SolidColorBrush x:Key="OpusFileRowAlternate">#1C1C1C</SolidColorBrush>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Light">
+          <SolidColorBrush x:Key="OpusSurface">#F0F1F3</SolidColorBrush>
+          <SolidColorBrush x:Key="OpusInset">#FFFFFF</SolidColorBrush>
+          <SolidColorBrush x:Key="OpusLine">#C8CBD2</SolidColorBrush>
+          <SolidColorBrush x:Key="OpusMuted">#505A69</SolidColorBrush>
+          <SolidColorBrush x:Key="OpusInactive">#DCE0E6</SolidColorBrush>
+          <SolidColorBrush x:Key="OpusFileRow">#FFFFFF</SolidColorBrush>
+          <SolidColorBrush x:Key="OpusFileRowAlternate">#F4F5F7</SolidColorBrush>
+        </ResourceDictionary>
+      </ResourceDictionary.ThemeDictionaries>
+    </ResourceDictionary>
+  </Application.Resources>
+  <Application.Styles>
+    <FluentTheme DensityStyle="Compact" />
+    <StyleInclude Source="avares://Avalonia.Controls.DataGrid/Themes/Fluent.xaml" />
+    <Style Selector="Window">
+      <Setter Property="FontSize" Value="12" />
+      <Setter Property="Background" Value="{DynamicResource OpusSurface}" />
+    </Style>
+    <Style Selector="Button">
+      <Setter Property="MinHeight" Value="22" />
+      <Setter Property="Padding" Value="6,2" />
+      <Setter Property="CornerRadius" Value="2" />
+    </Style>
+    <Style Selector="Button.navigation-locked">
+      <Setter Property="Background" Value="{DynamicResource OpusInactive}" />
+      <Setter Property="BorderBrush" Value="{DynamicResource OpusMuted}" />
+    </Style>
+    <Style Selector="ListBoxItem.join-drop-target">
+      <Setter Property="BorderBrush" Value="{DynamicResource OpusMuted}" />
+      <Setter Property="BorderThickness" Value="1" />
+    </Style>
+    <Style Selector="TextBox">
+      <Setter Property="MinHeight" Value="22" />
+      <Setter Property="Padding" Value="5,2" />
+    </Style>
+    <Style Selector="ComboBox">
+      <Setter Property="MinHeight" Value="22" />
+      <Setter Property="Padding" Value="5,2" />
+    </Style>
+    <Style Selector="Border.surface">
+      <Setter Property="Background" Value="{DynamicResource OpusSurface}" />
+      <Setter Property="BorderBrush" Value="{DynamicResource OpusLine}" />
+    </Style>
+    <Style Selector="Border.inset">
+      <Setter Property="Background" Value="{DynamicResource OpusInset}" />
+      <Setter Property="BorderBrush" Value="{DynamicResource OpusLine}" />
+    </Style>
+    <Style Selector="Border.inactive">
+      <Setter Property="Background" Value="{DynamicResource OpusInactive}" />
+    </Style>
+    <Style Selector="TextBlock.secondary">
+      <Setter Property="Foreground" Value="{DynamicResource OpusMuted}" />
+    </Style>
+    <Style Selector="Path.opus-icon">
+      <Setter Property="Stroke" Value="{DynamicResource OpusMuted}" />
+    </Style>
+    <Style Selector="DataGrid">
+      <Setter Property="BorderThickness" Value="0" />
+      <Setter Property="RowHeight" Value="20" />
+      <Setter Property="GridLinesVisibility" Value="None" />
+      <Setter Property="HeadersVisibility" Value="Column" />
+    </Style>
+    <Style Selector="DataGridColumnHeader">
+      <Setter Property="MinHeight" Value="22" />
+      <Setter Property="Padding" Value="3,0" />
+    </Style>
+    <Style Selector="DataGrid#FileList">
+      <Setter Property="RowHeight" Value="19" />
+      <Setter Property="RowBackground" Value="{DynamicResource OpusFileRow}" />
+    </Style>
+    <Style Selector="DataGrid#FileList DataGridRow:nth-child(2n)">
+      <Setter Property="Background" Value="{DynamicResource OpusFileRowAlternate}" />
+    </Style>
+    <Style Selector="DataGrid#FileList DataGridCell TextBlock">
+      <Setter Property="FontSize" Value="12" />
+    </Style>
+  </Application.Styles>
+</Application>
