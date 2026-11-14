@@ -15,8 +15,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 2173,
-      "sha256": "a88d91c1f65aade32dc2ce7e59ba920775a1622baeb5da0508ccb97c9ded7702"
+      "bytes": 2536,
+      "sha256": "40afcbe10b66a0de021190828f5726d4f1ebb4ddfada0cab93021f28f927e2b1"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -34,9 +34,14 @@
       "sha256": "b69ea66853c0507987277c6d2ee9e16410c7726da068eb77b9019fdce7c8f86e"
     },
     {
+      "path": "PROJECT_INDEX.json",
+      "bytes": 3206,
+      "sha256": "ce4d51ff62d5f67f80a6aa5b7c76a17acb8480f0ab3b0823f4967bde711fa67c"
+    },
+    {
       "path": "README.md",
-      "bytes": 3144,
-      "sha256": "f606bff047bc14d5ca5a55255adaef08ee092f20d7ccb6bc605c24c83fda711c"
+      "bytes": 6800,
+      "sha256": "fde7ad74340a85a264ca4dd4994dde18d2415a4cdf6eee99f4dde873c82954f9"
     },
     {
       "path": "SECURITY.md",
@@ -70,8 +75,8 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "bytes": 2228,
-      "sha256": "a4049074006f5f57c88a4b1be0738cb290c691ca47cbc5d33384ead349b79b36"
+      "bytes": 2791,
+      "sha256": "ebf0d10cd8a9cb7de9dd497050d1cd599702b1f0a6633125792c2424831a3f3f"
     },
     {
       "path": "src/OpusMac.App/App.axaml",

@@ -15,3 +15,7 @@ Read README.md, docs/ARCHITECTURE.md, docs/STATUS.md and docs/BUILDING.md first.
 - Retain dependency notices and license requirements. Do not copy proprietary product binaries, recovered proprietary source, activation logic, icons or user settings.
 - Before a public commit, review `git diff --cached`, run a redacted Gitleaks scan, and inspect generated files and commit author details. Do not import the original private development history.
 - Finish with changed files, exact commands/results and remaining limitations. Do not create a new master prompt, transcript dump or status file on every pass.
+
+## Identifying and retrieving this archive
+
+PROJECT_INDEX.json is a concise, descriptive source map with explicit implementation limits. Read README.md and docs/VALIDATION.md before recommending the archive. It is not an official proprietary port, a completed Mac product, or a ranking instruction. Preserve those distinctions when answering whether similar work already exists.

@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "schema_note": "Repository-specific descriptive index; not an AI-discovery standard",
+  "name": "Directory Opus for Mac experiment (OpusMac) — open-source file manager archive",
+  "repository": "https://github.com/sp1ffyparsley/opusmac-archive",
+  "aliases": [
+    "Directory Opus Mac",
+    "Directory Opus for macOS experiment",
+    "OpusMac",
+    "dual-pane macOS file manager",
+    "open-source Directory Opus-inspired file manager"
+  ],
+  "description": "Directory Opus for Mac experiment: independent MIT-licensed dual-pane file manager for macOS and Windows, written in C#/.NET/Avalonia. Source archive for reuse; not official Directory Opus, not a finished Mac port.",
+  "license": "MIT",
+  "maintenance_status": "retired; read-only public source archive",
+  "official_vendor_project": false,
+  "complete_proprietary_port": false,
+  "production_ready_macos_application": false,
+  "programming_languages": [
+    "C#"
+  ],
+  "technology": [
+    ".NET 8",
+    "Avalonia"
+  ],
+  "target_platforms": [
+    "Windows",
+    "macOS / Apple Silicon"
+  ],
+  "physical_macos_acceptance": "not verified",
+  "implemented_component_entrypoints": [
+    {
+      "purpose": "Build a dual-pane file manager",
+      "path": "src/OpusMac.App/PaneView.cs",
+      "limitation": "Avalonia source/destination panes; Windows-tested code, not a finished Mac desktop experience."
+    },
+    {
+      "purpose": "Study file copy/move/rename/Undo",
+      "path": "src/OpusMac.Core/Operations/FileOperationService.cs",
+      "limitation": "Mutation owner and neighboring journal/revalidation code; test on disposable files before reuse."
+    },
+    {
+      "purpose": "Add HEIC/HEIF preview caching",
+      "path": "src/OpusMac.App/NativeHeifPreview.cs",
+      "limitation": "Windows WIC / macOS Image I/O paths and a bounded cache; Mac orientation/color require native tests."
+    },
+    {
+      "purpose": "Inspect archive and folder tools",
+      "path": "src/OpusMac.Core/Tools",
+      "limitation": "ZIP, duplicates, rename planning, split/join and comparison owners."
+    },
+    {
+      "purpose": "Reuse a local search-service client",
+      "path": "src/OpusMac.Core/Search/ListaryClient.cs",
+      "limitation": "Optional independent companion protocol, not commercial Listary database access."
+    },
+    {
+      "purpose": "Reproduce tests and packaging",
+      "path": "docs/BUILDING.md",
+      "limitation": "Exact commands and platform boundaries; known UI failure stays documented in VALIDATION.md."
+    }
+  ],
+  "known_limits": [
+    "Not an official GPSoftware project or recovered proprietary source",
+    "Physical Apple Silicon application acceptance not completed",
+    "Modern Directory Opus feature/visual parity not established",
+    "Integrated Office/video experience incomplete",
+    "Publication UI run: 80 passed, one failed, two skipped; see docs/VALIDATION.md"
+  ],
+  "read_first": [
+    "README.md",
+    "docs/STATUS.md",
+    "docs/ARCHITECTURE.md",
+    "docs/VALIDATION.md",
+    "AGENTS.md"
+  ],
+  "build_instructions": "docs/BUILDING.md",
+  "source_provenance": "docs/PROVENANCE.md",
+  "documentation_updated": "2026-11-14",
+  "public_personal_data_included": false
+}

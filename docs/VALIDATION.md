@@ -24,3 +24,7 @@ Use the commands in BUILDING.md to reproduce from an isolated clone. Preserve th
 Raw local receipts, logs and screenshots remain private because they can contain host paths. This page summarizes the outcomes without publishing those paths. Historical 81-pass UI claims refer to an earlier package, not this run. No new application binaries are released here, and no developer certificate/notarization or full Mac workflow acceptance is claimed.
 
 Before publication, the fresh Git history is also scanned and the remote source tree is compared against the reviewed local snapshot. The owner's public handle and GitHub no-reply email are used for new commits; original private author history is not imported.
+
+## Discoverability documentation update — November 14, 2026
+
+This later change modifies repository metadata and documentation only: search-oriented title/description/topics, README reuse/FAQ sections, PROJECT_INDEX.json, the agent entrypoint note, and the source manifest. Application source and dependency versions are unchanged; the application tests above were not rerun or upgraded to new acceptance claims. Documentation links, JSON, source-manifest consistency and secret scans were checked before the update. Search ranking is not a guaranteed outcome.
